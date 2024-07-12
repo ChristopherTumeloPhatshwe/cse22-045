@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Warner Bros - Collections</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <style>
+            body {
+                background: #000;
+                color: #fff;
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                overflow-x: hidden;
+            }
+
+            .navbar {
+                background-color: rgba(255, 255, 255, 0.2);
+                backdrop-filter: blur(0.625rem);
+                border-radius: 0.3125rem;
+            }
+
+            .navbar-brand,
+            .navbar-nav .nav-link {
+                color: rgba(255, 255, 255, 0.9);
+            }
+
+            .navbar-brand:hover,
+            .navbar-nav .nav-link:hover {
+                color: rgba(255, 255, 255, 1);
+            }
+
+            main {
+                background: url('image/bg.jpg');
+            }
+
+            .container {
+                padding-block: 0.625rem;
+                background: rgba(16, 21, 61, 0.5);
+                backdrop-filter: blur(0.625rem);
+                -webkit-backdrop-filter: blur(0.625rem);
+                border: 0.0625rem solid rgba(255, 255, 255, 0.5);
+                border-radius: 0.9375rem;
+                box-shadow: 0 0.03125rem 0 0.0625rem rgba(255, 255, 255, 0.23) inset, 0 0.0625rem 0 0 rgba(255, 255, 255, 0.6) inset, 0 0.25rem 1rem rgba(0, 0, 0, 0.12);
+            }
+
+            .card {
+                background: rgba(255, 255, 255, 0.15);
+                border: 0.125rem solid rgba(159, 160, 168, 0.5);
+                border-radius: 0.625rem;
+                box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(0.9375rem);
+                transition: 0.3s;
+            }
+
+            .card img {
+                object-fit: cover;
+                aspect-ratio: 1/1;
+            }
+
+            .card:hover {
+                transform: scale(1.05);
+            }
+
+            .card-img-top {
+                border-top-left-radius: 0.625rem;
+                border-top-right-radius: 0.625rem;
+            }
+
+            .card-title,
+            .card-text {
+                color: #fff;
+            }
+
+            header {
+                background: rgba(0, 0, 0, 0.7);
+                backdrop-filter: blur(0.625rem);
+            }
+
+            #hero {
+                background: rgba(0, 0, 0, 0.7);
+                backdrop-filter: blur(0.9375rem);
+                padding-top: 6.25rem;
+                padding-bottom: 6.25rem;
+                text-align: center;
+            }
+
+            #hero .hero-text {
+                color: #fff;
+            }
+
+            .btn-warning {
+                background: rgba(255, 193, 7, 0.7);
+                backdrop-filter: blur(0.625rem);
+            }
+
+            .btn-warning:hover {
+                background: rgba(255, 193, 7, 0.9);
+            }
+
+            #featured .card {
+                margin-bottom: 1.875rem;
+            }
+
+            .glassmorphic-modal .modal-content {
+                background: rgba(255, 255, 255, 0.15);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.18);
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                border-radius: 10px;
+            }
+
+            .glassmorphic-modal .modal-header,
+            .glassmorphic-modal .modal-footer {
+                background: transparent;
+                border-color: rgba(255, 255, 255, 0.12);
+            }
+
+            .glassmorphic-modal .modal-title,
+            .glassmorphic-modal .modal-body {
+                color: #fff;
+            }
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    </head>
+
+    <body>
+        <header class="py-4">
+            <div class="container">
+                <h1 class="text-center mb-0">
+                    <a href="index.html">
+                        <img src="image/logo.png" class="mb-2" alt="Warner Bros" style="max-height: 50px;">
+                    </a>
+                    Warner Bros
+                </h1>
+                <nav class="navbar navbar-expand-md navbar-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="movies.html">Movies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tvshows.html">TV Shows</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="games.html">Games & Apps</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="collections.html">Collections</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="feedback.html">Feedback</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main class="py-5">
+            <div class="container">
+                <section id="collections" class="text-center mb-5 px-5">
+                    <h2 class="mb-4 text-white">Collections</h2>
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card border-0 bg-transparent animate__animated animate__fadeIn">
+                                <img src="image/superheroes.jpg" class="card-img-top img-fluid"
+                                    alt="Superheroes Collection">
+                                <div class="card-body">
+                                    <h5 class="card-title">Superheroes Collection</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card border-0 bg-transparent animate__animated animate__fadeIn">
+                                <img src="image/harrypotter.jpg" class="card-img-top img-fluid"
+                                    alt="Harry Potter Collection">
+                                <div class="card-body">
+                                    <h5 class="card-title">Harry Potter Collection</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card border-0 bg-transparent animate__animated animate__fadeIn">
+                                <img src="image/lotr.jpg" class="card-img-top img-fluid"
+                                    alt="Lord of the Rings Collection">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lord of the Rings Collection</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card border-0 bg-transparent animate__animated animate__fadeIn">
+                                <img src="image/matrix.jpg" class="card-img-top img-fluid" alt="The Matrix Collection">
+                                <div class="card-body">
+                                    <h5 class="card-title">The Matrix Collection</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card border-0 bg-transparent animate__animated animate__fadeIn">
+                                <img src="image/horror.jpg" class="card-img-top img-fluid" alt="Horror Collection">
+                                <div class="card-body">
+                                    <h5 class="card-title">Horror Collection</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card border-0 bg-transparent animate__animated animate__fadeIn">
+                                <img src="image/animation.jpg" class="card-img-top img-fluid"
+                                    alt="Animation Collection">
+                                <div class="card-body">
+                                    <h5 class="card-title">Animation Collection</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <footer class="container mt-5 py-5 d-flex justify-content-center align-items-center">
+                <span>&copy; Warner Bros</span>
+                <div class="social-links ml-3">
+                    <a href="https://www.facebook.com/warnerbrosent" class="text-white mr-3"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/warnerbros" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/warnerbrosentertainment/" class="text-white mr-3"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/user/WarnerBrosPictures" class="text-white mr-3"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+            </footer>
+
+
+        </main>
+        <div class="modal fade glassmorphic-modal" id="collectionInfoModal" tabindex="-1" role="dialog"
+            aria-labelledby="collectionInfoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="collectionInfoModalLabel">Collection Information</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="collectionInfoModalBody">
+                        <!-- Collection info will be displayed here -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            const collections = [
+                {
+                    title: 'Superheroes Collection',
+                    image: 'image/superheroes.jpg',
+                    info: 'Explore the best of superhero movies from DC Universe including Batman, Superman, Wonder Woman, and more.'
+                },
+                {
+                    title: 'Harry Potter Collection',
+                    image: 'image/harrypotter.jpg',
+                    info: 'Dive into the magical world of Harry Potter with all the movies from the iconic series.'
+                },
+                {
+                    title: 'Lord of the Rings Collection',
+                    image: 'image/lotr.jpg',
+                    info: 'Experience the epic journey through Middle-earth with the Lord of the Rings trilogy.'
+                },
+                {
+                    title: 'The Matrix Collection',
+                    image: 'image/matrix.jpg',
+                    info: 'Enter the Matrix and explore the groundbreaking sci-fi series starring Keanu Reeves.'
+                },
+                {
+                    title: 'Horror Collection',
+                    image: 'image/horror.jpg',
+                    info: 'Get spooked with our collection of the best horror movies including classics and new releases.'
+                },
+                {
+                    title: 'Animation Collection',
+                    image: 'image/animation.jpg',
+                    info: 'Enjoy a variety of animated films from Warner Bros, perfect for kids and adults alike.'
+                }
+            ];
+
+            // Function to show collection info in modal
+            function showCollectionInfo(collectionIndex) {
+                const collection = collections[collectionIndex];
+                const modalBody = document.getElementById('collectionInfoModalBody');
+                modalBody.innerHTML = `
+                    <img src="${collection.image}" class="img-fluid mb-3" alt="${collection.title}">
+                    <h5 class="mb-3">${collection.title}</h5>
+                    <p>${collection.info}</p>
+                `;
+                $('#collectionInfoModal').modal('show');
+            }
+
+            // Event listener for card clicks
+            document.addEventListener('DOMContentLoaded', function () {
+                const cards = document.querySelectorAll('.card');
+                cards.forEach((card, index) => {
+                    card.addEventListener('click', function () {
+                        showCollectionInfo(index);
+                    });
+                });
+            });
+        </script>
+    </body>
+
+</html>
